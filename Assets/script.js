@@ -8,104 +8,29 @@ let score = 0;
 
 const questions = [
     {
-        question: "Which Pokemon is known as the 'Electric Mouse'?",
-        options: ["Pikachu", "Charmander", "Squirtle", "Bulbasaur"],
-        answer: "Pikachu"
+        question: "What is the correct way to write a JavaScript array?",
+        options: ["var colors = 'red', 'green', 'blue'", "var colors = (1:'red', 2:'green', 3:'blue')", "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')", "var colors = ['red', 'green', 'blue']"],
+        answer: "var colors = ['red', 'green', 'blue']"
     },
     {
-        question: "What type of Pokemon is Pikachu?",
-        options: ["Fire", "Water", "Electric", "Grass"],
-        answer: "Electric"
+        question: "What is the result of the following expression: 2 + 2 + '2'?",
+        options: ["22", "4", "222", "Error"],
+        answer: "42"
     },
     {
-        question: "Which Pokemon is also known as the 'Time Travel Pokemon'?",
-        options: ["Jigglypuff", "Meowth", "Celebi", "Mew"],
-        answer: "Celebi"
+        question: "Which keyword is used to declare a variable in JavaScript?",
+        options: ["variable", "v", "declare", "var"],
+        answer: "var"
     },
     {
-        question: "Which Pokemon is known for its sleep-inducing moves?",
-        options: ["Snorlax", "Hypno", "Drowzee", "Jigglypuff"],
-        answer: "Jigglypuff"
+        question: "What is the purpose of the 'console.log()' method in JavaScript?",
+        options: ["To display a message box", "To print the output to the console", "To create a new variable", "To add a new CSS style"],
+        answer: "To print the output to the console"
     },
     {
-        question: "Which Pokemon has the ability to fly continuously without landing?",
-        options: ["Lugia", "Articuno", "Ho-Oh", "Zapdos"],
-        answer: "Ho-Oh"
-    },
-    {
-        question: "What type of Pokemon is Charizard?",
-        options: ["Fire", "Water", "Electric", "Grass"],
-        answer: "Fire"
-    },
-    {
-        question: "Which Pokemon has the highest base stat total?",
-        options: ["Mewtwo", "Arceus", "Rayquaza", "Groudon"],
-        answer: "Arceus"
-    },
-    {
-        question: "What type of Pokemon is Jigglypuff?",
-        options: ["Normal", "Fairy", "Psychic", "Dark"],
-        answer: "Normal"
-    },
-    {
-        question: "Which Pokemon is also known as the 'Fire Lizard'?",
-        options: ["Squirtle", "Bulbasaur", "Charmander", "Charmeleon"],
-        answer: "Charmander"
-    },
-    {
-        question: "What type of Pokemon is Bulbasaur?",
-        options: ["Grass", "Poison", "Bug", "Rock"],
-        answer: "Grass"
-    },
-    {
-        question: "Which Pokemon is known for its powerful psychic abilities?",
-        options: ["Mewtwo", "Alakazam", "Kadabra", "Mr. Mime"],
-        answer: "Mewtwo"
-    },
-    {
-        question: "Which Pokemon is known as the 'Water-type Mouse'?",
-        options: ["Pikachu", "Rattata", "Marill", "Pachirisu"],
-        answer: "Marill"
-    },
-    {
-        question: "What type of Pokemon is Squirtle?",
-        options: ["Water", "Fire", "Grass", "Electric"],
-        answer: "Water"
-    },
-    {
-        question: "Which Pokemon is also known as the 'Seed Pokemon'?",
-        options: ["Bulbasaur", "Ivysaur", "Oddish", "Bellsprout"],
-        answer: "Bulbasaur"
-    },
-    {
-        question: "Which Pokemon is known for its extreme speed?",
-        options: ["Pikachu", "Electrode", "Jolteon", "Zapdos"],
-        answer: "Electrode"
-    },
-    {
-        question: "What type of Pokemon is Gengar?",
-        options: ["Ghost", "Dark", "Poison", "Psychic"],
-        answer: "Ghost"
-    },
-    {
-        question: "Which Pokemon is also known as the 'Poison Bee'?",
-        options: ["Beedrill", "Vespiquen", "Dustox", "Yanmega"],
-        answer: "Beedrill"
-    },
-    {
-        question: "What type of Pokemon is Beedrill?",
-        options: ["Bug", "Poison", "Flying", "Bug/Flying"],
-        answer: "Bug/Poison"
-    },
-    {
-        question: "Which Pokemon is known as the 'Mystic Pokemon'?",
-        options: ["Mew", "Jirachi", "Mesprit", "Azelf"],
-        answer: "Mew"
-    },
-    {
-        question: "What type of Pokemon is Mewtwo?",
-        options: ["Psychic", "Dark", "Ghost", "Psychic/Fighting"],
-        answer: "Psychic"
+        question: "What is the correct way to write a comment in JavaScript?",
+        options: ["<!--This is a comment-->", "/*This is a comment*/", "//This is a comment", "**This is a comment**"],
+        answer: "//This is a comment"
     }
 ];
 
@@ -187,7 +112,6 @@ function checkAnswer(userAnswer) {
     const currentQuestion = questions[currentQuestionIndex];
     if (userAnswer === currentQuestion.answer) {
         score++;
-        timeLeft += 10; // Add 10 seconds for correct answer
     } else {
         timeLeft -= 10; // Deduct 10 seconds for wrong answer
     }
